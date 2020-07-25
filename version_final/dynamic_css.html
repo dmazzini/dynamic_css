@@ -1,0 +1,62 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="app.css">
+
+<div id="app">
+    <input type="text" class="demo" :class="colorCuardo1" v-model="colorCuardo1">
+    <input type="text" class="demo" :class="colorCuardo2" v-model="colorCuardo2">
+    <input type="text" class="demo" :class="colorCuardo3" v-model="colorCuardo3">
+    <!--<input type="text" class="demo" :style="{backgroundColor: colorCuardo4}" v-model="colorCuardo4">-->
+    <hr>
+    <button v-on:click='velez'>Velez</button>
+    <button v-on:click='river'>River</button>
+    <button v-on:click='independiente'>Independiente</button>
+    <button v-on:click='dyj'>DyJ</button>
+    <button v-on:click='argentina'>Argentina</button>
+    <button v-on:click='alemania'>Alemania</button>
+</div>
+
+<script>
+var app = new Vue(
+    {
+        el: '#app',
+        data: {
+            colorCuardo1: 'verde',
+            colorCuardo2: 'rojo',
+            colorCuardo3: 'azul',
+            colorCuardo4: 'gray'
+        }, 
+        methods: {
+            velez: function() {
+                this.colorCuardo1= 'blanco'
+                this.colorCuardo2= 'azul'
+                this.colorCuardo3= 'blanco'     
+            },
+            river: function() {
+                this.colorCuardo1= 'blanco'
+                this.colorCuardo2= 'rojo'
+                this.colorCuardo3= 'blanco'     
+            },
+            independiente: function() {
+                this.colorCuardo1= 'rojo'
+                this.colorCuardo2= 'rojo'
+                this.colorCuardo3= 'rojo'     
+            },
+            dyj: function() {
+                this.colorCuardo1= 'verde'
+                this.colorCuardo2= 'amarillo'
+                this.colorCuardo3= 'verde'     
+            },
+            alemania: function() {
+                this.colorCuardo1= 'negro'
+                this.colorCuardo2= 'rojo'
+                this.colorCuardo3= 'amarillo'     
+            },
+            argentina: function() {
+                this.colorCuardo1= 'celeste'
+                this.colorCuardo2= 'blanco'
+                this.colorCuardo3= 'celeste'     
+            }
+        }
+    }
+)
+</script>

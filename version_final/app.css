@@ -1,0 +1,33 @@
+.demo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    margin: 10px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.blanco {
+    background-color: white;
+}
+.rojo {
+    background-color: red;
+}
+.verde {
+    background-color: green;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.negro {
+    background-color: black;
+}
+
+.celeste {
+    background-color: lightblue;
+}

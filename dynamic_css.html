@@ -1,0 +1,46 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="app.css">
+
+<div id="app">
+    <input type="text" class="demo" :class="colorCuadro1" v-model="colorCuadro1">
+    <input type="text" class="demo" :class="colorCuadro2" v-model="colorCuadro2"/>
+    <input type="text" class="demo" :class="colorCuadro3" v-model="colorCuadro3"/>
+
+    <input type="text" class="demo" :style="{width: ancho}" v-model="ancho">
+    <hr>
+    <button @click="velez" >Velez</button>
+    <button @click="river" >River</button>
+    <button @click="dyj" >Defesa y justicia</button>
+</div>
+
+<script>
+var app = new Vue(
+    {
+        el: '#app',
+        data: {
+            colorCuadro1: 'azul',
+            colorCuadro2: 'rojo',
+            colorCuadro3: 'verde',
+            ancho: '100',
+        },
+        methods: {
+            velez: function() {
+                this.colorCuadro1='blanco'
+                this.colorCuadro2='azul'
+                this.colorCuadro3='blanco'
+            },
+            river: function() {
+                this.colorCuadro1='blanco'
+                this.colorCuadro2='rojo'
+                this.colorCuadro3='blanco'
+            },
+            dyj: function() {
+                this.colorCuadro1='verde'
+                this.colorCuadro2='amarillo'
+                this.colorCuadro3='verde'
+            }
+        }
+        
+    }
+)
+</script>
